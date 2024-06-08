@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coffedesign</title>
 </head>
 <body>
     
+    <!-- header -->
+    <header>
+        <a href="index.html" class="header_logo">Coffe-<span>Design</span></a>
+
+        <nav class="navbar">
+            <a href="", target="_blank">Портфолио</a>
+            <a href="", target="_blank">Отзывы</a>
+            <a href="", target="_blank" class="order">Заказать</a>
+        </nav>
+
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
 
 
 
 
 
 
-    
+
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function(){
+            this.classList.toggle('active');
+            document.querySelector('.navbar').classList.toggle('open');
+        })
+    </script>
 </body>
 </html>
