@@ -81,8 +81,8 @@ header .navbar a:hover{color:#e6e6e6}
 .open{display: flex !important;}
 
 /* header_page */
-section{padding: 0 5%;}
 .home{
+    padding: 0 5%;
     display: flex; justify-content: space-between;
     align-items: center;
 }
@@ -98,13 +98,13 @@ section{padding: 0 5%;}
     color: #868686;
     letter-spacing: .4rem;
 }
-.home_content .coffe{
+.coffe{
     text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.589);
     background: linear-gradient(45deg, #d6d6d6 33%, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.home_content .design{
+.design{
     text-shadow: 0px 0px 50px rgba(86, 117, 231, 0.589);
     background: linear-gradient(45deg, #5575E7 33%, #90A9FF);
     -webkit-background-clip: text;
@@ -121,7 +121,10 @@ section{padding: 0 5%;}
     font-size: 20px;
     transition: 0.4s ease-in-out;
 }
-.home_order:hover{box-shadow: 0px 0px 50px 0px rgba(115, 138, 224, 0.637);}
+.home_order:hover{
+    background: linear-gradient(45deg, #6281f0 33%, #96aeff);
+    box-shadow: 0px 0px 50px 0px rgba(115, 138, 224, 0.637);
+}
 .home_portfolio{
     display: inline-block;
     padding: 1rem 4rem;
@@ -132,13 +135,55 @@ section{padding: 0 5%;}
     font-size: 20px;
     transition: 0.4s ease-in-out;
 }
-.home_portfolio:hover{box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.404);}
-.home .home_img img{
-    width: 550px;
+.home_portfolio:hover{
+    background: linear-gradient(45deg, #ffffff 33%, #FFFFFF);
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.404);
 }
+.home .home_img img{width: 550px;}
 
-
-
+/* about_me_page */
+.about_me_page{
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 12%;
+    display: flex;
+    justify-content: space-between;
+}
+.about_me_page .works_img img{width: 650px;}
+.about_me_block{margin-bottom: 120px;}
+.about_me_block .about_me_button{
+    padding: 1rem 3rem;
+    background: linear-gradient(45deg, #131313 33%, #252525);
+    border-radius: 30px;
+    color: #8FA8FE;
+    text-shadow: #839DFA 0 0 20px;
+    transition: 0.4s;
+}
+.about_me_block .about_me_button:hover{background: linear-gradient(45deg, #161616 33%, #272727);}
+.about_me_block h2{
+    margin: 40px 0 20px 0;
+    font-size: 5rem;
+}
+.about_me_text{
+    font-size: 17px;
+    margin-bottom: 60px;
+    color: #959595;
+    text-shadow: #959595b2 0px 0 30px;;
+}
+.about_me_block .all_services_button{
+    display: inline-block;
+    padding: 1.3rem 4rem;
+    background: linear-gradient(45deg, #5575E7 33%, #90A9FF);
+    box-shadow: 0px 0px 41px 0px rgba(115, 138, 224, 0.568);
+    border-radius: 18px;
+    transition: 0.4s;
+}
+.about_me_block .all_services_button:hover{
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #5e7ef0 33%, #97afff);
+    box-shadow: 0px 0px 41px 0px rgba(115, 138, 224, 0.74);
+    border-radius: 25px;
+}
 
 
 
@@ -155,6 +200,9 @@ section{padding: 0 5%;}
         height: 532px;
     }
     .home_content h1{font-size: 5rem;}
+
+    .about_me_page{flex-flow: column; row-gap: 50px;}
+    .about_me_page .works_img img{width: 100%;}
 }
 @media (max-width: 900px){
     .burger{display: flex;}
@@ -197,5 +245,17 @@ section{padding: 0 5%;}
     .home_portfolio{
         padding: 1rem 2.5rem;
         font-size: 15px;
+    }
+
+    .about_me_page{padding: 0 5%;}
+    .about_me_block h2{
+        margin: 25px 0 20px 0;
+        font-size: 3rem;
+    }
+    .about_me_block .about_me_button{padding: 0.8rem 2.5rem;}
+    .about_me_text{font-size: 15px; margin-bottom: 45px;}
+    .about_me_block .all_services_button{
+        padding: 1.2rem 3.5rem;
+        border-radius: 18px;
     }
 }
