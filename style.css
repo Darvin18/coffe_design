@@ -88,7 +88,7 @@ header .navbar a:hover{color:#e6e6e6}
 }
 .home_content h1{
     margin: 0;
-    font-size: 8rem;
+    font-size: 7.5rem;
     text-align: center;
 }
 .home_content p{
@@ -139,6 +139,20 @@ header .navbar a:hover{color:#e6e6e6}
     background: linear-gradient(45deg, #ffffff 33%, #FFFFFF);
     box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.404);
 }
+.short_info_board{
+    margin: 40px auto 0;
+    display: flex; justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    width: 60%; height: 110px;
+    background: linear-gradient(45deg, #313131, #1a1a1a);
+    border: solid #e1e1e12c 0.025px;
+    border-radius: 25px;
+    text-align: center;
+}
+.kolvo{font-size: 40px; color: #E1E1E1;}
+.work_experience .years{font-size: 40px; color: #738BE0;}
+.short_info_board_text{padding: 5px 0 0 0; color: #818181;}
 .home .home_img img{width: 550px;}
 
 /* about_me_page */
@@ -203,6 +217,8 @@ header .navbar a:hover{color:#e6e6e6}
 
     .about_me_page{flex-flow: column; row-gap: 50px;}
     .about_me_page .works_img img{width: 100%;}
+
+    .short_info_board{padding: 0 3%}
 }
 @media (max-width: 900px){
     .burger{display: flex;}
@@ -258,4 +274,9 @@ header .navbar a:hover{color:#e6e6e6}
         padding: 1.2rem 3.5rem;
         border-radius: 18px;
     }
+
+    .short_info_board{width: 90%; height: 90px;}
+    .kolvo{font-size: 30px;}
+    .work_experience .years{font-size: 30px;}
+    .short_info_board_text{font-size: 13px;}
 }
