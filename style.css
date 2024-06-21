@@ -321,7 +321,50 @@ header .navbar a:hover{color:#e6e6e6}
 }
 
 /* whyme_page */
-
+.whyme_page{
+    margin-top: 150px;
+}
+.whyme_content{
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 70px;
+    padding: 0 8%;
+}
+.whyme_block{
+    padding: 60px 0 0 0;
+    position: relative;
+    width: 400px;
+    height: 220px;
+    text-align: center;
+    background: linear-gradient(180deg, #222222, #101010);
+    border: 1px solid #424242;
+    /* border-image-source: linear-gradient(180deg, #424242 33%, #181818);
+    border-image-slice: 1; */
+    border-radius: 15px;
+}
+.whyme_title{font-size: 35px; font-weight: bold;}
+.whyme_description{
+    font-size: 16px; 
+    margin: 8px 5px 25px 5px;
+    color: #6b6b6b;
+}
+.whyme_count{
+    font-weight: bold;
+    font-size: 55px;
+    color: #ffffff2c;
+    letter-spacing: 5px;
+}
+.whyme_block img{
+    position: absolute;
+    top: -57px;
+    left: 150px;
+}
+.whyme_speed{
+    font-size: 32px;
+}
 
 
 
@@ -427,6 +470,18 @@ header .navbar a:hover{color:#e6e6e6}
     .my_works_page .see_more a{font-size: 1rem;}
 
     .radial_sphere_swiper{width: 100%; height: 100%;}
+
+    .whyme_description{font-size: 14px;}
+    .whyme_title{font-size: 30px;}
+    .whyme_speed{font-size: 24px;}
+}
+@media (max-width: 480px){
+    .whyme_block{width: 330px;}
+    .whyme_block img{left: 120px;}
+}
+@media (max-width: 400px){
+    .whyme_block{width: 280px;}
+    .whyme_block img{left: 90px;}
 }
 @media (max-width: 345px){
     .radial_sphere_swiper{display: none;}

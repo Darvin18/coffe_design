@@ -31,3 +31,4 @@ const gallary = new Swiper('.gallary', {
         },
     },
 });
+
